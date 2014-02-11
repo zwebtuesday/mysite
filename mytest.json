@@ -1,0 +1,27 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://sebuilder.github.io/se-builder/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Plugins"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "user_extensions.js file"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": []
+}
